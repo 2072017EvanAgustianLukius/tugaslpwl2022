@@ -16,9 +16,8 @@ $link = null;
         <th>Title</th>
         <th>Author</th>
         <th>Publisher</th>
-        <th>Publisher Year</th>
-        <th>Short Description</th>
-        <th>Name</th>
+        <th>Publish_Year</th>
+        <th>Nama_Genre</th>
     </tr>
     </thead>
     <tbody>
@@ -30,7 +29,6 @@ $link = null;
         echo '<td>' . $book['author'] . '</td>';
         echo '<td>' . $book['publisher'] . '</td>';
         echo '<td>' . $book['publisher_year'] . '</td>';
-        echo '<td>' . $book['short_description'] . '</td>';
         echo '<td>' . $book['name'] . '</td>';
         echo '</tr>';
     }
