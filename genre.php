@@ -9,12 +9,12 @@ $result = $stmt->fetchAll();
 $link = null;
 ?>
 
-<table class="table table-striped table-bordered">
-    <thead class="thead-dark">
-    <th>
-        ID
-    </th>
-    <th>Name</th>
+<table class="table table-primary">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+    </tr>
     </thead>
     <tbody>
     <?php

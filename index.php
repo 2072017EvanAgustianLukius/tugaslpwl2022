@@ -39,6 +39,7 @@
             include_once 'genre.php';
             break;
         case 'book' :
+            include_once 'book.php';
             break;
         default:
             include_once 'home.php';

@@ -9,14 +9,17 @@ $result = $stmt->fetchAll();
 $link = null;
 ?>
 
-<table class="table table-striped table-bordered">
-    <thead class="thead-dark">
-    <th>Isbn</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Publisher</th>
-    <th>Publisher_year</th>
-    <th>Nama Genre</th>
+<table class="table table-primary">
+    <thead>
+    <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Publisher</th>
+        <th>Publisher Year</th>
+        <th>Short Description</th>
+        <th>Name</th>
+    </tr>
     </thead>
     <tbody>
     <?php
@@ -27,6 +30,7 @@ $link = null;
         echo '<td>' . $book['author'] . '</td>';
         echo '<td>' . $book['publisher'] . '</td>';
         echo '<td>' . $book['publisher_year'] . '</td>';
+        echo '<td>' . $book['short_description'] . '</td>';
         echo '<td>' . $book['name'] . '</td>';
         echo '</tr>';
     }
